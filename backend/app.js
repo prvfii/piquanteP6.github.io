@@ -1,9 +1,11 @@
 const express = require('express');
+const app = express();
 const mongoose = require('mongoose');
 const userRoutes = require('./routes/user');
-const Thing = require('./models/thing');
+const sauceRoutes = require('./routes/sauce')
 
-const app = express();
+
+
 
 //Connection mongoDb avec mongoose 
 mongoose.connect('mongodb+srv://user1:openclassroom22@cluster0.no2m3am.mongodb.net/?retryWrites=true&w=majority',
@@ -12,7 +14,6 @@ mongoose.connect('mongodb+srv://user1:openclassroom22@cluster0.no2m3am.mongodb.n
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
-app.use(express.json());
 
  
 
@@ -24,9 +25,10 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use(express.json());
 
 
-app.use('/api/sauces', stuffRoutes);
+app.use('/api/sauces', sauceRoutes);
 app.use('/api/auth', userRoutes);
 
 module.exports = app;
