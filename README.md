@@ -1,28 +1,35 @@
-# HotTakes
+𝑷𝒊𝒒𝒖𝒂𝒏𝒕𝒆
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+> *A modern web application for hot sauce reviews.*
 
-## Development server
+This project is part of the OpenClassrooms Web Developer program. It involves building a secure API for managing user accounts, product reviews, and dynamic interactions. The frontend was generated using [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## **Features**
+- User authentication and authorization.
+- CRUD operations for sauce management:
+  - Add new sauces.
+  - View all sauces or individual sauce details.
+  - Update existing sauces.
+  - Delete sauces.
+- Secure password storage with bcrypt.
+- REST API for data management and communication with the backend.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## **Technologies Used**
+- **Frontend**: Angular CLI
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **Image Upload**: Multer for handling file uploads
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## **Frontend Setup**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# piquanteP6.github.io
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/your-username/piquante.git
+cd piquante
